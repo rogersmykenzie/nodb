@@ -12,7 +12,9 @@
   display: fixed;
   bottom: 0;
   border: 1px solid rgb(116, 174, 255);
-  font-family: 'Yatra One', cursive;
+  /* font-family: 'Yatra One', cursive; */
+  /* font-family: 'Anton', sans-serif; */
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: bolder;
   display: flex;
   justify-content: center;
@@ -215,6 +217,7 @@ body {
 }
 .issue-input {
   margin-left: 1.5vw;
+  margin-top: 10px;
 }
 .individual-comment {
   background: white;
@@ -223,6 +226,18 @@ body {
 .select {
   margin-left: 43vw;
 }
-.birth-year {
-
+.urlImage {
+  margin-left: 43.5vw;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.location-button {
+  width: 4vw;
+  height: 2vh;
+  background: rgb(9, 119, 204);
+  color: white;
+  border-radius: 2px;
+  font-family: 'Amiko', sans-serif;
+  box-shadow: 0px 2px 1px black;
+  border: none;
 }
