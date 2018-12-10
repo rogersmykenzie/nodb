@@ -50,12 +50,12 @@ export default class CardAreaSymptoms extends Component {
                     {this.state.toggle ? comps 
                     : null}
                 </div>
-                {this.state.toggle ? <select onChange={e => this.setState({gender: e.target.value})}>
+                {this.state.toggle ? <select className='select'onChange={e => this.setState({gender: e.target.value})}>
                     <option>Select Birth Gender</option>
                     <option value='male'>Male</option>
                     <option value='female'>Female</option>
                 </select> : null}
-                {this.state.toggle ? <input placeholder='Birth Year e.g. 1998' onChange={e => this.setState({year: e.target.value})}></input> : null}
+                {this.state.toggle ? <input className='birth-year' placeholder='Birth Year e.g. 1998' onChange={e => this.setState({year: e.target.value})}></input> : null}
                 <br /><br />
                 <div className='button-symptoms-area-container'>
                     {this.state.toggle ? <button className='symptoms-area-submit' onClick={() => this.state.toggle ? this.setState({toggle: false}) : this.setState({toggle: true, toggleCheck: true})}>Find Possible Causes</button> : null }

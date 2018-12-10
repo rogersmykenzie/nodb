@@ -41,7 +41,7 @@ export default class IssueCard extends Component {
     }
     render() {
         let data1 = this.state.comments.map(val => {
-            return <p>{val.user}: {val.comment}</p>
+            return <div><p className='individual-comment'>{val.user}: {val.comment}</p></div>
         })
         return(
             <>
